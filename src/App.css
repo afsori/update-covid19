@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.container-card{
+  width: 90%;
+  margin: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-card h2{
+  text-align:center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-hasil{
+  padding: 10px;
+  width: 20%;
+  border: 2px solid;
+  border-radius: 3px;
+  margin-bottom: 35px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-hasil h5{
+  font-size: 1.2rem;
+  margin: 3px 0 8px 0;
+}
+.card-hasil p{
+  margin: 3px 0;
+  width: 65%;
+  font-size: 13px;
+}
+.wrapper-card{
   display: flex;
-  flex-direction: column;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+.card-hasil>div{
+  display: flex;
+}
+.card-hasil h4{
+  margin: 0;
+  font-size: 13px;
+}
+.card-hasil h6{
+  font-size: 8px;
+  margin: 0;
+}
+.card-hasil h3{
+  margin: 0;
+  width: 65%;
+}
+.wrapper-global-virus{
+  display: flex;
+    justify-content: center;
+}
+.card-global{
+  width: 30%;
+  border: 2px solid blue;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px 0px blue;
+  padding: 10px;
+}
+.card-global h1{
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.card-global>div{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card-global p{
+  font-size: 17px;
+  margin: 0;
+  width: 65%;
+}
+.card-global h2{
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 991px) {
+  .card-hasil {
+    width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 480px) {
+  .card-hasil {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-hasil {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 1144px) {
+  .card-hasil {
+    width: 20%;
   }
 }
